@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        branch: 'main', url: 'https://github.com/Hemantakumarpati/ticket-reservation-system.git'
+        git branch: 'main', url: 'https://github.com/Hemantakumarpati/ticket-reservation-system.git'
       }
     }
   }
