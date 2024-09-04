@@ -12,11 +12,7 @@ pipeline {
       }
     }
       stages {
-    stage('Deploy to Tomcat') {
-      steps {
-        sh "cp /var/lib/jenkins/workspace/Ticketbooking/target/TrainBook-1.0.0-SNAPSHOT.war /opt/tomcat/webapps"
-      }
-    }
+
   }
 }
     
