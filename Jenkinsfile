@@ -11,11 +11,9 @@ pipeline {
         sh "mvn package"
       }
     }
-      stages {
-
   }
 }
-}
+
     
     
   
