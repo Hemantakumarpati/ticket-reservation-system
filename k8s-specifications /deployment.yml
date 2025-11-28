@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketreservation
+  labels:
+    app: ticketreservation
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ticketreservation
+  template:
+    metadata:
+      labels:
+        app: ticketreservation
+    spec:
+      containers:
+        - name: ticketreservation-container
+          image: ${IMAGE_REPO}/${NAME}:${VERSION}   # <- placeholder to be replaced
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
