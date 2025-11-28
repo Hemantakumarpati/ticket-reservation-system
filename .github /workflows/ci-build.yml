@@ -107,7 +107,7 @@ jobs:
       - name: Apply manifests
         run: kubectl apply -f ${{ env.K8S_MANIFESTS_PATH }} --namespace ${{ env.K8S_NAMESPACE }}
 
-      # Update deployment with the latest image
+      # Update deployment with the latest image 
       - name: Update deployment image
         run: |
           echo "Deploying image: $FULL_IMAGE"
