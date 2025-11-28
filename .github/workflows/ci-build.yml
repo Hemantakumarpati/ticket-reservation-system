@@ -112,5 +112,5 @@ jobs:
         run: |
           echo "Deploying image: $FULL_IMAGE"
           kubectl set image deployment/${{ env.K8S_DEPLOYMENT_NAME }} \
-            onlinebookstore-container=$FULL_IMAGE \
+            ticketreservation-container=$FULL_IMAGE \
             --namespace ${{ env.K8S_NAMESPACE }} 
