@@ -21,7 +21,7 @@ jobs:
       FULL_IMAGE: ${{ steps.set-vars.outputs.FULL_IMAGE }}
       VERSION: ${{ steps.set-vars.outputs.VERSION }}
     steps:
-      # Checkout code
+      # Checkout code 
       - name: Checkout repository
         uses: actions/checkout@v3
 
